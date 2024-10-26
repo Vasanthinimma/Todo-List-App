@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #87ceeb; /* Sky blue background for a fresh, calming look */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+h1 {
+  color: #003366; /* Darker blue for heading contrast */
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.TodoWrapper {
+  background: #ffffff; /* Light container background for content */
+  margin-top: 1rem;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  border: 1px solid #d1d1d1; /* Light border to define space */
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.todo-input {
+  outline: none;
+  background: #f0f8ff; /* Very light blue for input background */
+  border: 2px solid #003366; /* Deep blue for action */
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border-radius: 8px;
+  color: #003366; /* Dark text for good readability */
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-input::placeholder {
+  color: #a5a5a5; /* Subtle placeholder color */
+}
+
+.todo-input:focus {
+  border-color: #005f99; /* Slightly lighter blue on focus */
+  box-shadow: 0 0 10px rgba(0, 95, 153, 0.3);
+}
+
+.todo-btn {
+  background: linear-gradient(135deg, #007bb5, #0096c7); /* Gradient button with cool blue tones */
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.todo-btn:hover {
+  background: #007bb5; /* Darker on hover */
+  box-shadow: 0 5px 15px rgba(0, 123, 181, 0.4); /* Shadow on hover */
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003366; /* Deep blue for tasks */
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Todo:hover {
+  background: #005f99; /* Slightly lighter on hover */
+  box-shadow: 0 5px 15px rgba(0, 95, 153, 0.4);
+}
+
+.fa-trash {
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #a5d6e3; /* Softer blue for completed tasks */
+  text-decoration: line-through;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+  color: #ff4c4c; /* Red hover for caution (delete/edit) */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .TodoWrapper {
+    padding: 1.5rem;
+  }
+
+  .todo-btn, .todo-input {
+    padding: 0.6rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+
